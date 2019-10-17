@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Finding KeyCode in JavaScript</title>
+    <script>
+
+        window.onkeydown = function(e){
+            document.getElementById("key-pressed").innerHTML = e.key;
+            document.getElementById("key-code").innerHTML = e.keyCode;
+        }
+
+    </script>
+</head>
+<body>
+    
+    <h1>Finding KeyCode In JavaScript</h1>
+    <table border="1">
+        <tr>
+            <td>The key your pressed</td>
+            <td id="key-pressed"></td>
+        </tr>
+        <tr>
+            <td>The keycode of the pressed key</td>
+            <td id="key-code"></td>
+        </tr>
+    </table>
+
+</body>
+</html>
